@@ -1,0 +1,258 @@
+/* خطوط هوية نطاق 2026: Tajawal للعربية (محلي)، وLama Sans للإنجليزية إن كان مثبتًا على الجهاز وإلا Tajawal.
+   الأوزان: Light / Regular / Medium فقط؛ أي وزن أثقل يُعرض Medium. الأسماء القديمة (Cairo, DM Sans, NITAQ UI) تشير لنفس الخطوط. */
+@font-face{font-family:'Cairo';font-weight:300;font-display:swap;size-adjust:106%;src:url(fonts/tajawal-arabic-300-normal.woff2) format('woff2');unicode-range:U+0600-06FF,U+0750-077F,U+0870-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FEFC}
+@font-face{font-family:'Cairo';font-weight:300;font-display:swap;src:local('Lama Sans Light'),local('LamaSans-Light'),url(fonts/tajawal-latin-300-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
+@font-face{font-family:'Cairo';font-weight:400;font-display:swap;size-adjust:106%;src:url(fonts/tajawal-arabic-400-normal.woff2) format('woff2');unicode-range:U+0600-06FF,U+0750-077F,U+0870-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FEFC}
+@font-face{font-family:'Cairo';font-weight:400;font-display:swap;src:local('Lama Sans'),local('Lama Sans Regular'),local('LamaSans-Regular'),url(fonts/tajawal-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
+@font-face{font-family:'Cairo';font-weight:500 900;font-display:swap;size-adjust:106%;src:url(fonts/tajawal-arabic-500-normal.woff2) format('woff2');unicode-range:U+0600-06FF,U+0750-077F,U+0870-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FEFC}
+@font-face{font-family:'Cairo';font-weight:500 900;font-display:swap;src:local('Lama Sans Medium'),local('LamaSans-Medium'),url(fonts/tajawal-latin-500-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
+@font-face{font-family:'NITAQ UI';font-weight:300;font-display:swap;size-adjust:106%;src:url(fonts/tajawal-arabic-300-normal.woff2) format('woff2');unicode-range:U+0600-06FF,U+0750-077F,U+0870-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FEFC}
+@font-face{font-family:'NITAQ UI';font-weight:300;font-display:swap;src:local('Lama Sans Light'),local('LamaSans-Light'),url(fonts/tajawal-latin-300-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
+@font-face{font-family:'NITAQ UI';font-weight:400;font-display:swap;size-adjust:106%;src:url(fonts/tajawal-arabic-400-normal.woff2) format('woff2');unicode-range:U+0600-06FF,U+0750-077F,U+0870-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FEFC}
+@font-face{font-family:'NITAQ UI';font-weight:400;font-display:swap;src:local('Lama Sans'),local('Lama Sans Regular'),local('LamaSans-Regular'),url(fonts/tajawal-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
+@font-face{font-family:'NITAQ UI';font-weight:500 900;font-display:swap;size-adjust:106%;src:url(fonts/tajawal-arabic-500-normal.woff2) format('woff2');unicode-range:U+0600-06FF,U+0750-077F,U+0870-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FEFC}
+@font-face{font-family:'NITAQ UI';font-weight:500 900;font-display:swap;src:local('Lama Sans Medium'),local('LamaSans-Medium'),url(fonts/tajawal-latin-500-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
+@font-face{font-family:'Tajawal';font-weight:300;font-display:swap;size-adjust:106%;src:url(fonts/tajawal-arabic-300-normal.woff2) format('woff2');unicode-range:U+0600-06FF,U+0750-077F,U+0870-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FEFC}
+@font-face{font-family:'Tajawal';font-weight:300;font-display:swap;src:local('Lama Sans Light'),local('LamaSans-Light'),url(fonts/tajawal-latin-300-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
+@font-face{font-family:'Tajawal';font-weight:400;font-display:swap;size-adjust:106%;src:url(fonts/tajawal-arabic-400-normal.woff2) format('woff2');unicode-range:U+0600-06FF,U+0750-077F,U+0870-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FEFC}
+@font-face{font-family:'Tajawal';font-weight:400;font-display:swap;src:local('Lama Sans'),local('Lama Sans Regular'),local('LamaSans-Regular'),url(fonts/tajawal-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
+@font-face{font-family:'Tajawal';font-weight:500 900;font-display:swap;size-adjust:106%;src:url(fonts/tajawal-arabic-500-normal.woff2) format('woff2');unicode-range:U+0600-06FF,U+0750-077F,U+0870-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FEFC}
+@font-face{font-family:'Tajawal';font-weight:500 900;font-display:swap;src:local('Lama Sans Medium'),local('LamaSans-Medium'),url(fonts/tajawal-latin-500-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
+@font-face{font-family:'NITAQ Brand';font-weight:300;font-display:swap;size-adjust:106%;src:url(fonts/tajawal-arabic-300-normal.woff2) format('woff2');unicode-range:U+0600-06FF,U+0750-077F,U+0870-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FEFC}
+@font-face{font-family:'NITAQ Brand';font-weight:300;font-display:swap;src:local('Lama Sans Light'),local('LamaSans-Light'),url(fonts/tajawal-latin-300-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
+@font-face{font-family:'NITAQ Brand';font-weight:400;font-display:swap;size-adjust:106%;src:url(fonts/tajawal-arabic-400-normal.woff2) format('woff2');unicode-range:U+0600-06FF,U+0750-077F,U+0870-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FEFC}
+@font-face{font-family:'NITAQ Brand';font-weight:400;font-display:swap;src:local('Lama Sans'),local('Lama Sans Regular'),local('LamaSans-Regular'),url(fonts/tajawal-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
+@font-face{font-family:'NITAQ Brand';font-weight:500 900;font-display:swap;size-adjust:106%;src:url(fonts/tajawal-arabic-500-normal.woff2) format('woff2');unicode-range:U+0600-06FF,U+0750-077F,U+0870-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FEFC}
+@font-face{font-family:'NITAQ Brand';font-weight:500 900;font-display:swap;src:local('Lama Sans Medium'),local('LamaSans-Medium'),url(fonts/tajawal-latin-500-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
+@font-face{font-family:'DM Sans';font-weight:300;font-display:swap;src:local('Lama Sans Light'),local('LamaSans-Light'),url(fonts/tajawal-latin-300-normal.woff2) format('woff2')}
+@font-face{font-family:'DM Sans';font-weight:400;font-display:swap;src:local('Lama Sans'),local('Lama Sans Regular'),local('LamaSans-Regular'),url(fonts/tajawal-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'DM Sans';font-weight:500 900;font-display:swap;src:local('Lama Sans Medium'),local('LamaSans-Medium'),url(fonts/tajawal-latin-500-normal.woff2) format('woff2')}
+/* NITAQ UI — طبقة شكل موحّدة لأدوات الفريق (أداة المخططات، محرر الأسماء والأبعاد، مراجعة النتيجة).
+   شكل فقط: لا تغيّر أي سلوك. نفس ألوان الاستديو (Petrol / Warm Gold). الخط Cairo محلي ويعمل بلا إنترنت.
+   لإلغاء التحسين: احذف سطر <link> لهذا الملف من NITAQ_Plan_Presentation.html واحذف سطر تحميله أول studio-review.js. */
+
+
+
+:root{
+  --nq-ink:#101725; --nq-petrol:#101725; --nq-petrol-2:#1C2536; --nq-harbour:#34507F; --nq-gold:#C9A25D; --nq-gold-ink:#8F6F35;
+  --nq-muted:#6E7787; --nq-bg:#EEEDEA; --nq-panel:#FFFFFF; --nq-soft:#F7F6F3; --nq-line:#E4E1DA; --nq-line-2:#EEEDEA;
+  --nq-ok:#168A50; --nq-ok-bg:#EAF6EF; --nq-stop:#C04A3C; --nq-stop-bg:#FCEDEB; --nq-warn-bg:#F7F1E4;
+  --nq-r:10px; --nq-r-sm:8px; --nq-shadow:0 1px 2px rgba(16,23,37,.04),0 6px 20px rgba(16,23,37,.05);
+  --nq-font:'NITAQ Brand','Tajawal',Tahoma,Arial,sans-serif; --nq-focus:0 0 0 3px rgba(201,162,93,.35);
+}
+
+/* ---------- عناصر مشتركة داخل نوافذ المراجعة والمحرر ---------- */
+#nqReview,#txDialog{font-family:var(--nq-font);color:var(--nq-ink);direction:rtl;padding:0;border:0;border-radius:16px;background:var(--nq-bg);box-shadow:0 30px 80px rgba(16,23,37,.35);overflow:hidden}
+#nqReview[open],#txDialog[open]{display:flex;flex-direction:column}
+#nqReview::backdrop,#txDialog::backdrop{background:rgba(16,23,37,.62);backdrop-filter:blur(2px)}
+.nqHead{display:flex;align-items:center;gap:16px;padding:14px 22px;background:var(--nq-petrol);color:#fff;border-bottom:2px solid var(--nq-gold);flex:none}
+.nqHead h2{margin:0;font-size:19px;font-weight:700;line-height:1.3}
+.nqEyebrow{font-size:11px;letter-spacing:.14em;color:var(--nq-gold);font-weight:600}
+.nqIconBtn{margin-inline-start:auto;width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.35);background:transparent;color:#fff;font-size:16px;cursor:pointer;flex:none}
+.nqIconBtn:hover{background:rgba(255,255,255,.12)}
+.nqSr{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0 0 0 0)!important;white-space:nowrap!important;border:0!important}
+#nqReview :is(button,input,select,textarea),#txDialog :is(button,input,select,textarea){font:inherit;color:inherit}
+#nqReview :is(textarea,input[type=number],select),#txDialog :is(textarea,input[type=number],select){width:100%;background:#fff;border:1px solid var(--nq-line);border-radius:var(--nq-r-sm);padding:9px 12px;transition:border-color .15s,box-shadow .15s}
+#nqReview :is(textarea,input,select,button):focus-visible,#txDialog :is(textarea,input,select,button,summary):focus-visible{outline:none;border-color:var(--nq-gold);box-shadow:var(--nq-focus)}
+#nqReview textarea,#txDialog textarea{resize:vertical;min-height:64px}
+.nqPrimary,#txDialog .primary{background:var(--nq-petrol);color:#fff!important;border:1px solid var(--nq-petrol);border-radius:var(--nq-r-sm);padding:10px 18px;font-weight:700;cursor:pointer;transition:background .15s}
+.nqPrimary:hover,#txDialog .primary:hover{background:var(--nq-petrol-2)}
+.nqPrimary:disabled,#txDialog button:disabled{opacity:.45;cursor:not-allowed}
+.nqGhost{background:#fff;border:1px solid var(--nq-line);border-radius:var(--nq-r-sm);padding:8px 12px;cursor:pointer;font-weight:600;color:var(--nq-ink);text-align:center}
+.nqGhost:hover{border-color:var(--nq-gold);background:var(--nq-soft)}
+.nqDanger{color:var(--nq-stop)!important}
+.nqWide{width:100%}
+.nqDetails{background:var(--nq-panel);border:1px solid var(--nq-line);border-radius:var(--nq-r);padding:4px 14px;margin-top:12px}
+.nqDetails>summary{cursor:pointer;font-weight:600;padding:8px 0;color:var(--nq-petrol);list-style-position:inside}
+.nqHint,.nqLead,.nqFoot{color:var(--nq-muted);font-size:13.5px;line-height:1.8;margin:4px 0 10px}
+.nqFile{display:block;font-size:13px;font-weight:600;margin:0 0 10px}
+.nqFile input[type=file],.nqDropLabel input[type=file]{display:block;width:100%;margin-top:6px;font-size:12.5px;color:var(--nq-muted)}
+.nqFile input[type=file]::file-selector-button,.nqFileBtn input::file-selector-button{font:inherit;font-weight:600;border:1px solid var(--nq-line);background:var(--nq-soft);color:var(--nq-petrol);border-radius:8px;padding:6px 12px;margin-inline-end:8px;cursor:pointer}
+
+/* ---------- زر مراجعة النتيجة العائم ---------- */
+#nqReviewOpen{position:fixed;bottom:18px;left:18px;z-index:9990;display:flex;align-items:center;gap:8px;background:var(--nq-petrol);color:#fff;border:1px solid var(--nq-gold);border-radius:999px;padding:9px 16px 9px 12px;cursor:pointer;font:600 14px/1 var(--nq-font);box-shadow:0 8px 24px rgba(16,23,37,.28);transition:transform .15s,box-shadow .15s}
+#nqReviewOpen:hover{transform:translateY(-1px);box-shadow:0 12px 28px rgba(16,23,37,.34)}
+#nqReviewOpen .nqIco{display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--nq-gold);color:var(--nq-petrol);font-size:13px}
+@media(max-width:720px){#nqReviewOpen{padding:10px}#nqReviewOpen .nqTxt{display:none}}
+@media print{#nqReviewOpen{display:none!important}}
+
+/* ---------- نافذة مراجعة النتيجة ---------- */
+#nqReview{width:min(1180px,96vw);height:min(92vh,980px);max-height:92vh}
+#nqReview .nqBody{flex:1;overflow:auto;padding:18px 22px 8px}
+.nqStep{background:var(--nq-panel);border:1px solid var(--nq-line);border-radius:var(--nq-r);padding:16px 18px;margin-bottom:14px;box-shadow:var(--nq-shadow)}
+.nqStep h3{display:flex;align-items:center;gap:10px;margin:0 0 12px;font-size:16px;font-weight:700;color:var(--nq-petrol)}
+.nqNum{display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--nq-petrol);color:#fff;font-size:13px;font-weight:700;flex:none}
+.nqrPair{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.nqDrop{position:relative;border:1.5px dashed #E4E1DA;border-radius:var(--nq-r);background:var(--nq-soft);overflow:hidden;transition:border-color .15s,background .15s}
+.nqDrop.drag{border-color:var(--nq-gold);background:var(--nq-warn-bg)}
+.nqDrop.has{border-style:solid;border-color:var(--nq-line);background:#fff}
+.nqDropLabel{display:flex;flex-direction:column;gap:2px;padding:12px 14px;cursor:pointer;border-bottom:1px solid var(--nq-line-2)}
+.nqDropLabel input[type=file]{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+.nqDropT{font-weight:700;font-size:15px}
+.nqDropS{font-size:12.5px;color:var(--nq-muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.nqDropLabel:hover .nqDropS{color:var(--nq-petrol)}
+.nqDropLabel:has(input:focus-visible){box-shadow:inset var(--nq-focus)}
+.nqrPair img{display:block;width:100%;height:300px;object-fit:contain;background:#fff}
+#nqReview img:not([src]){visibility:hidden}
+.nqDrop:not(.has) img{height:150px}
+.nqInfo{margin:10px 0 0;font-size:13px;color:var(--nq-muted)}
+.nqrWarn{color:#8F6F35;font-weight:700}
+.nqRange{display:flex;align-items:center;gap:12px;font-size:13px;font-weight:600;margin:6px 0 10px}
+.nqRange input{flex:1;accent-color:var(--nq-petrol)}
+.nqrOverlay{position:relative;direction:ltr;height:440px;background:#fff;overflow:auto;border-radius:var(--nq-r-sm);border:1px solid var(--nq-line-2);margin-bottom:10px}
+.nqrOverlay img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+.nqCheck{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:10px 12px;border-radius:var(--nq-r-sm);border-inline-start:3px solid transparent}
+.nqCheck+.nqCheck{border-top:1px solid var(--nq-line-2)}
+.nqCheck[data-state=pass]{border-inline-start-color:var(--nq-ok)}
+.nqCheck[data-state=fail]{border-inline-start-color:var(--nq-stop);background:var(--nq-stop-bg)}
+.nqCheck[data-state=na]{border-inline-start-color:var(--nq-gold)}
+.nqCheckName{font-weight:600;font-size:14.5px}
+.nqSeg{display:inline-flex;background:var(--nq-soft);border:1px solid var(--nq-line);border-radius:10px;padding:3px;gap:2px;flex:none}
+.nqSeg button{border:0;background:transparent;border-radius:8px;padding:6px 12px;font-size:13px;font-weight:600;color:var(--nq-muted);cursor:pointer;white-space:nowrap}
+.nqSeg button:hover{color:var(--nq-ink);background:#fff}
+.nqSeg button.on{background:#fff;color:var(--nq-ink);box-shadow:0 1px 3px rgba(16,23,37,.15)}
+.nqSeg button.on[data-v=pass]{background:var(--nq-ok);color:#fff}
+.nqSeg button.on[data-v=fail]{background:var(--nq-stop);color:#fff}
+.nqSeg button.on[data-v=na]{background:var(--nq-gold);color:#fff}
+.nqField{display:block;margin-top:14px;font-size:13.5px;font-weight:600}
+.nqField textarea{margin-top:6px}
+.nqBar{flex:none;display:flex;align-items:center;gap:14px;padding:12px 22px;background:#fff;border-top:1px solid var(--nq-line);box-shadow:0 -6px 18px rgba(16,23,37,.05)}
+#nqrDecision{flex:1;margin:0;padding:10px 14px;border-radius:var(--nq-r-sm);font-weight:700;font-size:14.5px;border:1.5px solid var(--nq-gold);background:var(--nq-warn-bg);color:#8F6F35}
+#nqrDecision[data-state=Accept]{border-color:var(--nq-ok);background:var(--nq-ok-bg);color:#0f5e37}
+#nqrDecision[data-state=Reject]{border-color:var(--nq-stop);background:var(--nq-stop-bg);color:#8e2a1f}
+@media(max-width:720px){
+  #nqReview{width:100vw;height:100dvh;max-height:100dvh;max-width:100vw;border-radius:0}
+  #nqReview .nqBody{padding:14px}
+  .nqrPair{grid-template-columns:1fr}.nqrPair img{height:220px}
+  .nqCheck{flex-direction:column;align-items:stretch;gap:8px}
+  .nqSeg{display:grid;grid-template-columns:repeat(auto-fit,minmax(0,1fr))}
+  .nqSeg button{padding:7px 2px;font-size:12.5px}
+  .nqBar{flex-direction:column;align-items:stretch;padding:10px 14px}
+}
+
+/* ---------- محرر الأسماء والأبعاد ---------- */
+#txDialog{width:min(1500px,97vw);height:94vh;max-height:94vh;max-width:97vw}
+.txSteps{display:flex;gap:6px;flex-wrap:wrap;margin:0 auto 0 0;padding:0;list-style:none;counter-reset:s}
+.txSteps li{counter-increment:s;font-size:12.5px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:4px 12px 4px 10px;white-space:nowrap}
+.txSteps li::before{content:counter(s);display:inline-grid;place-items:center;width:18px;height:18px;margin-inline-end:6px;border-radius:50%;background:var(--nq-gold);color:var(--nq-petrol);font-size:11px;font-weight:700}
+#txDialog .txbody{flex:1;min-height:0;display:grid;grid-template-columns:320px 1fr;gap:0}
+.txSide{overflow:auto;padding:16px;border-inline-end:1px solid var(--nq-line);background:var(--nq-bg)}
+.txCard{background:#fff;border:1px solid var(--nq-line);border-radius:var(--nq-r);padding:14px;margin-bottom:12px;box-shadow:var(--nq-shadow)}
+.txCard h3{margin:0 0 10px;font-size:13px;font-weight:700;letter-spacing:.02em;color:var(--nq-petrol)}
+.txRow2{display:grid;grid-template-columns:1fr 92px;gap:10px;margin:10px 0}
+.txRow2 label{font-size:12.5px;font-weight:600}
+.txRow2 input{margin-top:4px}
+#txColor{width:100%;height:40px;padding:3px;border:1px solid var(--nq-line);border-radius:var(--nq-r-sm);background:#fff;cursor:pointer}
+#txSample{width:100%;margin-bottom:10px}
+#txStatus{margin:8px 0 0;font-size:13px;font-weight:600;line-height:1.7;color:var(--nq-petrol)}
+#txStatus:empty{display:none}
+.txNote{margin:8px 0 0;font-size:12px;color:var(--nq-muted)}
+#txRows{display:flex;flex-direction:column;gap:6px;max-height:190px;overflow:auto;margin-bottom:8px}
+#txRows:empty::before{content:'لا توجد تعديلات بعد';font-size:12.5px;color:var(--nq-muted)}
+#txRows button{display:block;width:100%;text-align:right;direction:ltr;unicode-bidi:plaintext;background:var(--nq-soft);border:1px solid var(--nq-line-2);border-radius:8px;padding:7px 10px;font-size:13px;cursor:pointer;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#txRows button:hover{border-color:var(--nq-gold)}
+#txRows button.on{border-color:var(--nq-petrol);background:#EEEDEA;font-weight:700}
+.txBtns{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.nqFileBtn{position:relative;display:grid;place-items:center;font-size:inherit}
+.nqFileBtn input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%}
+.txExportBtn{width:auto;margin-inline-start:auto;padding:9px 18px}
+.txStage{display:flex;flex-direction:column;min-width:0;min-height:0;padding:14px 16px;gap:10px}
+.txTools{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.txTools label{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600}
+.txTools select{width:auto!important;padding:6px 10px!important}
+.txTip{font-size:12.5px;color:var(--nq-muted)}
+#txDialog .nqDetails{margin:0}
+#txDialog .txview{background:repeating-conic-gradient(#EEEDEA 0 25%,#F7F6F3 0 50%) 0 0/20px 20px;border:1px solid var(--nq-line);border-radius:var(--nq-r)}
+.txSourceView{max-height:32vh!important;margin-bottom:10px}
+.txCanvasView{position:relative;flex:1;min-height:0;max-height:none!important}
+#txCanvas{box-shadow:0 2px 12px rgba(16,23,37,.15);background:#fff}
+.txEmpty{position:absolute;inset:0;display:grid;place-items:center;color:var(--nq-muted);font-weight:600;font-size:15px;direction:rtl;pointer-events:none}
+.txEmpty[hidden]{display:none}
+@media(max-width:900px){
+  #txDialog{width:100vw;height:100dvh;max-height:100dvh;max-width:100vw;border-radius:0}
+  .txSteps{display:none}
+  #txDialog .txbody{grid-template-columns:1fr;overflow:auto}
+  .txSide{border:0;overflow:visible}
+  .txStage{padding:0 16px 16px}
+  .txCanvasView{min-height:50vh}
+  .txStage{order:-1;padding:14px 16px 0}
+}
+
+/* ---------- صفحة إظهار المخططات (html[data-nq=plan]) ---------- */
+html[data-nq=plan] body{font-family:var(--nq-font);background:var(--nq-bg);color:var(--nq-ink);font-size:14.5px;line-height:1.75}
+html[data-nq=plan] main{max-width:none;padding:0 0 40px}
+html[data-nq=plan] .layout{max-width:1640px;margin:0 auto;padding:0 24px}
+html[data-nq=plan] main>h1{margin:0;padding:18px max(24px,calc((100% - 1592px)/2)) 6px;background:var(--nq-petrol);color:#fff;font-size:22px;font-weight:700;display:flex;align-items:center;gap:12px}
+html[data-nq=plan] main>h1::before{content:'';width:150px;height:36px;background:url(nitaq-signature-white.png) right center/contain no-repeat;flex:none;margin-inline-end:10px;padding-inline-end:14px;border-inline-end:1px solid rgba(201,162,93,.4)}
+html[data-nq=plan] main>.intro{display:block;max-width:none;width:auto;margin:0 0 22px;padding:2px max(24px,calc((100% - 1592px)/2)) 16px;background:var(--nq-petrol);color:#E4E1DA;font-size:13.5px;border-bottom:2px solid var(--nq-gold)}
+html[data-nq=plan] .layout{grid-template-columns:400px 1fr;gap:22px;align-items:start}
+html[data-nq=plan] section{background:var(--nq-panel);border:1px solid var(--nq-line);border-radius:14px;padding:18px 20px;margin-bottom:14px;box-shadow:var(--nq-shadow)}
+html[data-nq=plan] .preview{position:sticky;top:16px;max-height:calc(100vh - 32px);overflow:auto}
+html[data-nq=plan] h2{font-size:17px;font-weight:700;color:var(--nq-petrol);margin:0 0 10px}
+html[data-nq=plan] section>details>summary h2,html[data-nq=plan] summary h2{display:inline;margin:0}
+html[data-nq=plan] summary{cursor:pointer;font-weight:700;color:var(--nq-petrol);padding:4px 0}
+html[data-nq=plan] summary:hover{color:var(--nq-gold-ink)}
+html[data-nq=plan] main label{font-weight:600;font-size:13.5px;margin:12px 0}
+html[data-nq=plan] main :is(input,select,textarea){border:1px solid var(--nq-line);border-radius:var(--nq-r-sm);padding:9px 12px;background:#fff;transition:border-color .15s,box-shadow .15s;margin-top:4px}
+html[data-nq=plan] main input[type=file]{padding:7px;font-size:12.5px;color:var(--nq-muted);background:var(--nq-soft);border-style:dashed}
+html[data-nq=plan] main input[type=file]::file-selector-button{font:inherit;font-weight:600;border:1px solid var(--nq-line);background:#fff;color:var(--nq-petrol);border-radius:8px;padding:6px 12px;margin-inline-end:8px;cursor:pointer}
+html[data-nq=plan] main input[type=checkbox],html[data-nq=plan] main input[type=radio]{width:auto;accent-color:var(--nq-petrol)}
+html[data-nq=plan] main :is(input,select,textarea,button,summary):focus-visible{outline:none;border-color:var(--nq-gold);box-shadow:var(--nq-focus)}
+html[data-nq=plan] main button{border:1px solid var(--nq-line);border-radius:var(--nq-r-sm);padding:8px 14px;font-weight:600;background:#fff;color:var(--nq-ink);transition:background .15s,border-color .15s}
+html[data-nq=plan] main button:hover{border-color:var(--nq-gold);background:var(--nq-soft)}
+html[data-nq=plan] main button.primary{display:block;width:100%;background:var(--nq-petrol);border-color:var(--nq-petrol);color:#fff;padding:11px 18px;font-weight:700;margin-top:10px}
+html[data-nq=plan] main button.primary:hover{background:var(--nq-petrol-2)}
+html[data-nq=plan] .note{border:0;border-inline-start:3px solid var(--nq-gold);border-radius:0 var(--nq-r-sm) var(--nq-r-sm) 0;background:var(--nq-warn-bg);padding:10px 14px;font-size:13.5px}
+html[data-nq=plan] small{display:block;color:var(--nq-muted);font-size:12.5px;line-height:1.7}
+html[data-nq=plan] pre{border-radius:var(--nq-r-sm);border:1px solid var(--nq-line-2);background:var(--nq-soft);max-height:360px;overflow:auto}
+html[data-nq=plan] #status:not(:empty){color:var(--nq-ok);font-weight:600}
+html[data-nq=plan] #sheet{box-shadow:0 10px 30px rgba(16,23,37,.12);border-color:var(--nq-line)}
+html[data-nq=plan] .preview>h2{display:flex;align-items:center;justify-content:space-between}
+html[data-nq=plan] .txHost{background:linear-gradient(180deg,#fff, var(--nq-soft));border-color:#C9A25D}
+@media(max-width:950px){html[data-nq=plan] .layout{grid-template-columns:1fr}html[data-nq=plan] .preview{position:static;max-height:none}html[data-nq=plan] .layout{padding:0 16px}html[data-nq=plan] main>h1,html[data-nq=plan] main>.intro{padding-inline:16px}}
+@media print{html[data-nq=plan] body,html[data-nq=plan] main{background:#fff;padding:0;margin:0;max-width:none}html[data-nq=plan] .layout{display:block}html[data-nq=plan] .preview{position:static;max-height:none;overflow:visible;box-shadow:none;border:0;padding:0}html[data-nq=plan] #sheet{box-shadow:none}}
+
+/* ---------- أزرار اختيار الملفات بالعربية (nitaq-ui.js) ---------- */
+label:has(>.nqPickInput){position:relative}
+.nqPickInput{position:absolute!important;inset-inline-start:0;top:0;width:1px!important;height:1px!important;opacity:0!important;overflow:hidden!important;padding:0!important;border:0!important;margin:0!important}
+.nqPick{display:flex;align-items:center;gap:10px;margin-top:6px;padding:6px;border:1px dashed #E4E1DA;border-radius:var(--nq-r-sm);background:var(--nq-soft);cursor:pointer;font-weight:400;transition:border-color .15s,background .15s}
+.nqPick:hover{border-color:var(--nq-gold);background:#fff}
+.nqPick.has{border-style:solid;border-color:var(--nq-line);background:#fff}
+.nqPickBtn{flex:none;background:#fff;border:1px solid var(--nq-line);color:var(--nq-petrol);font-weight:700;font-size:12.5px;border-radius:7px;padding:5px 12px}
+.nqPick.has .nqPickBtn{background:var(--nq-petrol);border-color:var(--nq-petrol);color:#fff}
+.nqPick.has .nqPickBtn::before{content:'✓ '}
+.nqPickName{font-size:12.5px;color:var(--nq-muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;direction:ltr;unicode-bidi:plaintext;text-align:right;flex:1;min-width:0}
+.nqPick.has .nqPickName{color:var(--nq-ink)}
+label:has(>.nqPickInput:focus-visible) .nqPick{border-color:var(--nq-gold);box-shadow:var(--nq-focus)}
+
+/* ---------- مساحة العمل الموحّدة (Design Studio Docked) ---------- */
+/* صفحة المخططات داخل الاستديو: العنوان موجود في رأس الاستديو، فلا نكرر شريطها العلوي */
+html.nq-embedded[data-nq=plan] main>h1,html.nq-embedded[data-nq=plan] main>.intro{display:none}
+html.nq-embedded[data-nq=plan] .layout{padding-top:16px}
+/* الجوال: زر «إظهار الأدوات» في شريط التطبيق يفتح القائمة؛ الزر العائم يظهر فقط للإغلاق */
+@media(max-width:999px){.railtoggle[aria-expanded=false]{display:none!important}.main{padding-top:12px!important}.rail.closed{box-shadow:none!important}}
+/* الشاشات الكبيرة: مساحة العمل لها شريطها الخاص، فنخفي العنوان المكرر لنكسب ارتفاعًا للوحة العرض */
+@media(min-width:1000px){.main[data-view=home]>.head{display:none}.main[data-view=home] .dw-stage{height:calc(100dvh - 300px)}.dw-blend{display:flex!important;align-items:center;gap:10px;padding:6px 14px!important}.dw-blend input{flex:1;width:auto!important;min-width:120px;accent-color:#101725}.dw-blend small{display:inline!important;font-size:11px;color:#6E7787;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:45%}}
+
+/* المحرر: لا نعرض لوحة الرسم الفارغة قبل رفع الصورة */
+.txCanvasView:has(#txEmpty:not([hidden])) #txCanvas{visibility:hidden}
+
+/* ورقة العرض المطبوعة: Lama Sans إن كان مثبتًا، وإلا Tajawal */
+html[data-nq=plan] #sheet{font-family:'DM Sans','NITAQ Brand',Arial,sans-serif}
+html[data-nq=plan] main>h1{font-weight:500;letter-spacing:0}
+
+/* داخل الاستديو: نفس مقاسات خط الاستديو */
+html.nq-embedded[data-nq=plan] body{font-size:13px;line-height:1.75}
+html.nq-embedded[data-nq=plan] main h2{font-size:15px}
+html.nq-embedded[data-nq=plan] main label{font-size:12.5px}
+html.nq-embedded[data-nq=plan] main :is(input,select,textarea,button){font-size:13px}
+html.nq-embedded[data-nq=plan] main :is(input,select){padding:7px 10px}
+html.nq-embedded[data-nq=plan] .note,html.nq-embedded[data-nq=plan] small{font-size:12.5px}
+
+/* أزرار شريط القرار في «مقارنة النتيجة» */
+.nqBarBtns{display:flex;gap:8px;align-items:center;flex:none}
+.nqBarBtns .nqFileBtn{padding:9px 12px}
+.nqBarBtns [hidden]{display:none!important}
+@media(max-width:720px){.nqBarBtns{flex-wrap:wrap}.nqBarBtns>*{flex:1}}
+#nqReview button:disabled,#nqReview .nqGhost:disabled{opacity:.45;cursor:not-allowed}
+html.nq-embedded[data-nq=plan] main summary{font-size:14.5px}

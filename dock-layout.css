@@ -1,0 +1,52 @@
+/* NITAQ · تخطيط اللوحة الثابتة (Dock) للشاشات الكبيرة.
+   الهدف: تمرير واحد فقط في كل منطقة، ولوحة العمل تملأ المساحة المتاحة.
+   - عنوان القسم في سطر واحد مضغوط.
+   - «لوحة الأدوات» (فهرس القسم) تختفي عندما لا يكون لها فائدة (أقل من 4 أقسام، أو أداة داخل إطار).
+   - الأدوات المضمّنة (مدار الكاميرا، المخططات، المكتب الفني) تملأ مساحة العمل بلا تمرير خارجي؛ داخلها أعمدة تتمرر كل منها وحدها.
+   للإلغاء: احذف سطري dock-layout.css وdock-layout.js من آخر ملف الاستديو. */
+
+@media (min-width:1000px){
+  /* ---------- عنوان القسم: سطر واحد ---------- */
+  .main:not([data-view=home])>.head{display:flex!important;flex-wrap:wrap;align-items:center;column-gap:14px;row-gap:6px;padding:8px 20px!important;min-height:0}
+  .main>.head .ey,.main>.head>p{display:none!important}
+  .main>.head h2{order:1;margin:0!important;font-size:18px!important;line-height:1.4;white-space:nowrap}
+  .main>.head .subtabs{order:2;margin:0!important;flex-wrap:nowrap}
+  .main>.head .lockbar{order:3;margin:0!important;margin-inline-start:auto!important;padding:4px 10px!important;font-size:10.5px!important;max-width:46%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border-radius:999px}
+  .main>.head>.mini{order:4;float:none!important;margin:0!important}
+  .main>.head>button.mini[aria-label="إعدادات المشروع"]{display:none!important} /* مكرر: زر «المشروع» في شريط التطبيق */
+
+  /* ---------- فهرس القسم: فقط حين يفيد ---------- */
+  .module-desk:not(:has(.module-index-links>button:nth-child(4)))>.module-index{display:none!important}
+  .main>.module-desk:not(:has(.module-index-links>button:nth-child(4))){grid-template-columns:minmax(0,1fr)!important}
+  .main:is([data-view=camera],[data-view=plans],[data-view=engineering])>.module-desk>.module-index{display:none!important}
+  .main:is([data-view=camera],[data-view=plans],[data-view=engineering])>.module-desk{grid-template-columns:minmax(0,1fr)!important}
+
+  /* ---------- أدوات داخل إطار: تملأ المساحة، بلا تمرير خارجي ---------- */
+  .main:is([data-view=camera],[data-view=plans],[data-view=engineering]) .module-content{display:flex!important;flex-direction:column;overflow:hidden!important;padding:10px 14px!important;gap:8px}
+  .main:is([data-view=camera],[data-view=plans],[data-view=engineering]) .module-content>.wb-bar{display:none!important}
+
+  /* الكاميرا */
+  .main[data-view=camera] .cam-wrap{flex:1;min-height:0;display:flex;flex-direction:column;gap:8px}
+  .main[data-view=camera] .cam-wrap>.panel{flex:none;margin:0!important;padding:8px 12px!important;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  .main[data-view=camera] .cam-wrap>.panel .row{margin:0}
+  .main[data-view=camera] .cam-wrap>.panel .sub{display:none!important} /* الشرح صار تلميحًا على الزر */
+  .main[data-view=camera] .cam-wrap>.panel{padding:6px 8px!important;background:transparent!important;border:0!important;box-shadow:none!important}
+  .main[data-view=camera] .cam-wrap>div:not(.panel):not([hidden]){flex:1;min-height:0;overflow:auto}
+  .main[data-view=camera] .cam-orbit:not([hidden]){overflow:hidden!important;display:flex}
+  .main[data-view=camera] .cam-orbit>iframe{flex:1;height:auto!important;min-height:0!important;border-radius:12px!important}
+
+  /* المخططات */
+  .main[data-view=plans] .module-content>iframe{flex:1 1 0;height:auto!important;min-height:0!important}
+
+  /* المكتب الفني */
+  .main[data-view=engineering] .module-content>.eng-desk{flex:1;min-height:0;margin:0!important;display:flex;flex-direction:column}
+  .main[data-view=engineering] .eng-desk>div{flex:none;padding:6px 14px!important;font-size:12px}
+  .main[data-view=engineering] .eng-desk>iframe{flex:1;height:auto!important;min-height:0!important}
+}
+/* Persistent tools retain their state without consuming hidden layout space. */
+.tool-cache[hidden]{display:none!important}
+.tool-cache:not([hidden]){display:contents}
+.tool-cache[data-tool="plans"]:not([hidden]),.tool-cache[data-tool="engineering"]:not([hidden]){display:flex;flex:1;min-height:0;flex-direction:column}
+.tool-cache[data-tool="plans"]>iframe{flex:1;min-height:0;width:100%;height:100%;border:0}
+.tool-cache[data-tool="engineering"]>.eng-desk{flex:1;min-height:0}
+.capability-note{font-size:12px;padding:5px 16px;background:#f3f0e8;color:#6b5837;border-bottom:1px solid #e6ddca;flex-shrink:0}

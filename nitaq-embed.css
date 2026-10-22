@@ -1,0 +1,28 @@
+/* NITAQ · تنسيق الصفحات المضمّنة داخل الاستديو (يعمل أيضًا عند فتح الاستديو من المجلد مباشرة).
+   html.nq-embedded: داخل الاستديو · html.nq-dock: الاستديو على شاشة كبيرة ويريد أعمدة ثابتة تتمرر كل منها وحدها. */
+
+/* زر «استخدم صور المشروع» */
+.nqUse{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:6px 0 10px;padding:7px 10px;border:1px dashed #C9A25D;border-radius:8px;background:#F7F1E4;font:inherit;font-size:12.5px;color:#101725}
+.nqUse[hidden]{display:none!important}
+.nqUse button{font:inherit;font-size:12.5px;font-weight:500;border:1px solid #101725!important;background:#101725!important;color:#fff!important;border-radius:6px;padding:5px 12px;cursor:pointer;width:auto!important;margin:0!important;display:inline-block!important}
+.nqUse button:hover{background:#1C2536!important}
+.nqUse span{color:#6E7787;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0;flex:1;direction:ltr;unicode-bidi:plaintext;text-align:right}
+
+/* المخططات: أعمدة ثابتة */
+html.nq-dock[data-nq=plan],html.nq-dock[data-nq=plan] body{height:100%;overflow:hidden}
+html.nq-dock[data-nq=plan] main{height:100%;display:flex;flex-direction:column;padding:0!important}
+html.nq-dock[data-nq=plan] .layout{flex:1;min-height:0;width:100%;max-width:none!important;margin:0!important;box-sizing:border-box;padding:12px!important;gap:14px!important;align-items:stretch!important;grid-template-rows:minmax(0,1fr)!important;overflow:hidden}
+html.nq-dock[data-nq=plan] .controls{max-height:none!important;height:auto!important;min-height:0;align-self:stretch!important;overflow:auto!important;padding:0 2px 20px!important}
+html.nq-dock[data-nq=plan] .preview{position:static!important;max-height:none!important;height:auto!important;min-height:0;align-self:stretch!important;overflow:auto!important;margin:0!important}
+
+/* المكتب الفني: خط الهوية ومقاسات الاستديو */
+html[data-nq=desk] body{font-family:'NITAQ Brand','Tajawal',Tahoma,Arial,sans-serif}
+html.nq-embedded[data-nq=desk] body{font-size:13px!important;line-height:1.75!important}
+html.nq-embedded[data-nq=desk] h1{font-size:20px!important}
+html.nq-embedded[data-nq=desk] h2{font-size:15px!important}
+html.nq-embedded[data-nq=desk] pre{font-size:12.5px!important}
+html.nq-embedded[data-nq=desk] :is(button,input,select,textarea){font-size:13px!important}
+html.nq-embedded[data-nq=desk] body>header{padding:8px 16px!important;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+html.nq-embedded[data-nq=desk] body>header>:is(h1,p,small){display:none}
+html.nq-dock[data-nq=desk],html.nq-dock[data-nq=desk] body{height:100%}
+html.nq-dock[data-nq=desk] body{overflow:auto}
